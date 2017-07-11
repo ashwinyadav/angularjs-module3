@@ -62,12 +62,11 @@ function MenuSearchService ($http) {
 NarrowItDownController.$inject = ['MenuSearchService'];
 function NarrowItDownController (MenuSearchService) {
     var myMenu = this;
-//    var myMenu.found = [];
+
     myMenu.narrowItDown = function () {
         var response = MenuSearchService.getMatchedMenuItems(myMenu.searchTerm);
         response.then(function (foundItems){
             myMenu.found = foundItems;
-            console.log(myMenu.found.length);
         });
         
     }
