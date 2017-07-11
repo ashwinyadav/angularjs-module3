@@ -20,21 +20,11 @@
     </div>
 
     <!-- found-items should be implemented as a component -->
-<!--    <found-items found="myMenu.found" on-remove="myMenu.removeItem(index)"></found-items>-->
+
        <div>
         <br><br>
         <found-items items = "myMenu.found" on-remove = "myMenu.removeItem(index)"></found-items>
-<!--
-       <h3>Filtered Menu List</h3>
-        <ol>
-          <li ng-repeat="item in myMenu.found">
-            {{ item.short_name }}: Name - {{ item.name }}; Description - {{item.description}}
 
-            <button ng-click="myMenu.removeItem($index);">Remove Item</button>
-          </li>
-        </ol>
-        <div class="error" ng-if="(myMenu.found.length == 0)">Nothing Found</div>
--->
         </div> 
   </div>
 
